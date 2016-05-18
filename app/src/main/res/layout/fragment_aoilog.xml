@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.aina.adnd.popestimator.AOILogFragment">
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchCancel"
+            android:src="@drawable/ic_cancel_black_36dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentEnd="true"
+            android:contentDescription="@string/cancel_search"
+            android:focusable="true"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchButton"
+            android:src="@drawable/ic_search_black_36dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_toLeftOf="@+id/searchCancel"
+            android:layout_toStartOf="@+id/searchCancel"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/search_history"
+            android:focusable="true"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <EditText
+            android:layout_width = "fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/searchLog"
+            android:inputType="text"
+            android:saveEnabled="true"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_toLeftOf="@+id/searchButton"
+            android:layout_toStartOf="@+id/searchButton"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:contentDescription="@string/type_keyword"
+            android:focusable="true"/>
+
+
+        <ListView android:id="@+id/list_aoi"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="0dp"
+            android:layout_below="@+id/searchLog"
+            android:layout_alignRight="@id/searchCancel"
+            android:layout_alignEnd="@id/searchCancel"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_toRightOf="@id/searchCancel"
+            android:layout_toEndOf="@id/searchCancel"
+            android:choiceMode="singleChoice"
+            android:contentDescription="@string/saved_places"/>
+
+
+</RelativeLayout>

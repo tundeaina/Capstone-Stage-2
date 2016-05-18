@@ -1,0 +1,11 @@
+<appwidget-provider xmlns:android="http://schemas.android.com/apk/res/android"
+    android:minHeight="@dimen/widget_default_height"
+    android:minResizeHeight="@dimen/widget_min_resize_height"
+    android:minResizeWidth="@dimen/widget_min_resize_width"
+    android:minWidth="@dimen/widget_default_width"
+    android:updatePeriodMillis="360000"
+    android:previewImage="@mipmap/ic_launcher"
+    android:initialLayout="@layout/aoi_widget"
+    android:resizeMode="horizontal|vertical"
+    android:widgetCategory="home_screen">
+</appwidget-provider>

@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aina.adnd.popestimator.AOIReportActivity">
+
+    <item
+        android:id="@+id/menu_item_aoilog"
+        android:title="@string/action_my_places"
+        android:icon="@drawable/ic_view_list_white_36dp"
+        android:contentDescription="@string/view_saved_places"
+        app:showAsAction="always" />
+
+
+    <item
+        android:id="@+id/menu_item_share"
+        android:title="@string/action_share"
+        app:actionProviderClass="android.support.v7.widget.ShareActionProvider"
+        android:icon="@drawable/ic_share_white_36dp"
+        android:contentDescription="@string/share_report"
+        app:showAsAction="always" />
+
+</menu>

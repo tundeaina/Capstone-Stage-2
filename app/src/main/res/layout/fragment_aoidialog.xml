@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    tools:context="com.aina.adnd.popestimator.AOIDialogFragment">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:id="@+id/left">
+
+        <RadioButton
+            android:id="@+id/aoiRadial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/label_radial"
+            android:checked="true"
+            android:contentDescription="@string/select_radial"
+            android:focusable="true"
+            />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_miles"
+            android:textSize="13sp"
+            android:id="@+id/lbl_miles"
+            android:layout_marginTop="5dp" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/miles"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/set_miles"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:layout_toRightOf="@+id/left"
+        android:layout_toEndOf="@+id/left"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp">
+
+        <RadioButton
+            android:id="@+id/aoiDriveTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="@string/label_drivetime"
+            android:contentDescription="@string/select_drivetime"
+            android:focusable="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_minutes"
+            android:textSize="13sp"
+            android:id="@+id/lbl_minutes"
+            android:layout_marginTop="5dp" />
+
+        <NumberPicker
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/minutes"
+            android:layout_marginTop="5dp"
+            android:contentDescription="@string/select_minutes"
+            android:focusable="true"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

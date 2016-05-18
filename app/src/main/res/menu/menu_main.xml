@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.aina.adnd.popestimator.MainActivity">
+    <item
+        android:id="@+id/menu_item_search"
+        android:title="@string/action_search_places"
+        android:icon="@drawable/ic_search_white_36dp"
+        android:contentDescription="@string/search_saved_places"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_item_aoilog"
+        android:title="@string/action_my_places"
+        android:icon="@drawable/ic_view_list_white_36dp"
+        android:contentDescription="@string/view_saved_places"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_item_save"
+        android:title="@string/action_save"
+        android:icon="@drawable/ic_save_white_36dp"
+        android:contentDescription="@string/save_report"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/menu_item_share"
+        android:title="@string/action_share"
+        android:icon="@drawable/ic_share_white_36dp"
+        android:contentDescription="@string/share_report"
+        app:showAsAction="always" />
+
+</menu>
